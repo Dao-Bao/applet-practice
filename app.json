@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/product/product",
+    "pages/case/case",
+    "pages/about/about",
+    "pages/call/call"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "测试小程序",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [{
+      "selectedIconPath": "/pages/image/index.png",
+      "iconPath": "/pages/image/index.png",
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "selectedIconPath": "/pages/image/checkbox.png",  
+      "iconPath": "/pages/image/checkbox.png",  
+      "pagePath": "pages/product/product",  
+      "text": "产品中心" 
+    }, {
+      "selectedIconPath": "/pages/image/form.png",
+      "iconPath": "/pages/image/form.png",
+      "pagePath": "pages/case/case",
+      "text": "案例中心"
+    }, {
+      "selectedIconPath": "/pages/image/about.png",
+      "iconPath": "/pages/image/about.png",
+      "pagePath": "pages/about/about",
+      "text": "关于我们"
+    }, {
+      "selectedIconPath": "/pages/image/call.png",
+      "iconPath": "/pages/image/call.png",
+      "pagePath": "pages/call/call",
+      "text": "联系我们"
+    }]
+  }
+}

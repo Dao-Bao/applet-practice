@@ -1,0 +1,184 @@
+<view class="container">
+
+  <!-- 头-轮播 -->
+  <view class="page__hd">
+    <swiper class="swipers" current="{{currentSwiper}}" indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">  
+      <block wx:for="{{background}}" wx:key='key'>  
+        <swiper-item>  
+          <image src="{{item}}" class="slide-image"></image>  
+        </swiper-item>  
+      </block>  
+    </swiper>
+  </view>
+
+  <!-- 主页内容 -->
+  <view class="page__bd">
+    <view class="weui-article">
+        <!-- 公司产品 -->
+        <view class="weui-article__section">
+          <view class="product_nav">
+            <view class="weui-article__h2">公司产品</view>
+            <view style="clear:both"></view>
+          </view>
+          <view class="weui-article__section">
+            <!-- 直报系统 -->
+            <view class="product_block">
+              <view class="product">
+                <view class="product_img">
+                  <image class="weui-article__img" src="https://s1.ax1x.com/2020/06/24/NdhA5d.png" mode="aspectFit" style="height: 100px" />                  
+                </view>
+                <view class="weui-article__h3">数据直报系统</view>
+                <view class="weui-article__p product_p">
+                  本系统可以进行公司的管理、产品的排产、任务的定制和发布等功能。
+                </view>
+              </view>
+            </view>
+            <!-- 日志监控警告系统 -->
+            <view class="product_block">
+              <view class="product">
+                <view class="product_img">
+                <image class="weui-article__img" src="https://s1.ax1x.com/2020/06/24/NdhA5d.png" mode="aspectFit" style="height: 100px" />                  
+                </view>
+                <view class="weui-article__h3">日志监控警告系统</view>
+                <view class="weui-article__p product_p">
+                  对视频监控进行后台管理，可以进行视频预警、查看实时监控等功能。
+                </view>
+              </view>
+            </view>
+            <!-- 统一门户系统 -->
+            <view class="product_block">
+              <view class="product">
+                <view class="product_img">
+                  <image class="weui-article__img" src="https://s1.ax1x.com/2020/06/24/NdhA5d.png" mode="aspectFit" style="height: 100px"/>                  
+                </view>
+                <view class="weui-article__h3">日志监控警告系统</view>
+                <view class="weui-article__p product_p">
+                  本系统可以对公司内部的工作完成情况等进行统计。
+                </view>
+              </view>
+            </view>
+        </view>
+
+        <!-- 案例中心 -->
+        <view class="weui-article__section">
+          <view class="case_nav">
+            <view class="weui-article__h2">案例中心</view>
+            <view style="clear:both"></view>
+          </view>
+          <view class="weui-article__section">
+            <!-- 中汽研动力电池溯源信息系统 -->
+            <view class="case_block">
+              <view class="case">
+                <view class="case_img">
+                  <image class="weui-article__img case_imgs" src="https://s1.ax1x.com/2020/06/24/NdhmxP.png" mode="aspectFit"/>                  
+                </view>
+                <view class="weui-article__h3">中汽研动力电池溯源信息系统</view>
+                <view class="weui-article__p case_p">
+                  本系统是工业和信息化部-装备司直管国家平台，也是《新能源汽车动力蓄电池回收利用管理暂行办法》。
+                </view>
+              </view>
+            </view>
+            <!-- 知识产权专项申报系统 -->
+            <view class="case_block">
+              <view class="case">
+                <view class="case_img">
+                  <image class="weui-article__img case_imgs" src="https://s1.ax1x.com/2020/06/24/NdhlVg.png" mode="aspectFit"/>                  
+                </view>
+                <view class="weui-article__h3">知识产权专项申报系统</view>
+                <view class="weui-article__p case_p">
+                  加快实现知识产权强市目标，助力天津市企事业单位科技创新和转型升级，全面提升天津市知识产权创新。
+                </view>
+              </view>
+            </view>
+        </view>
+        <!-- 关于我们 -->
+        <view class="weui-article__section">
+          <view class="about_nav">
+            <view class="weui-article__h2">关于我们</view>
+            <view style="clear:both"></view>
+          </view>
+          <view class="weui-article__section">
+            <view class="about_block">
+              <view class="about_img">
+                <image class="weui-article__img about_imgs" src="https://s1.ax1x.com/2020/06/24/Nd5mB8.png" mode="aspectFit"/>                  
+              </view>
+              <view class="weui-article__h3 about_font">企业简介</view>
+              <view class="weui-article__p about_p">
+                公司自成立以来，公司始终秉承 “专业、职业、敬业”的企业精神，专注于电子政务智能商务、工业信息化等领域，凭借其多年系统开发以及信息服务经验，已成为业内知名的信息系统解决方案提供商。成立于2011年，是一家以软件产品研制、应用系统集成、数据分析系统实施为主导的综合性高科技软件企业。公司自成立以来，公司始终秉承 “专业、职业、敬业”的企业精神，专注于电子政务智能商务、工业信息化等领域，凭借其多年系统开发以及信息服务经验，已成为业内知名的信息系统解决方案提供商。
+              </view>
+            </view>
+          </view>
+        </view>
+        <!-- 公司荣誉 -->
+        <!-- <view class="weui-article__section">
+          <view class="honor_nav">
+            <view class="weui-article__h2">公司荣誉</view>
+            <view style="clear:both"></view>
+          </view>
+          <view class="weui-article__section">
+            <view class="honor_block">
+              <view class="add" hover-class="none" hover-stop-propagation="false">
+                <image class="add_pic" src="https://s1.ax1x.com/2020/06/24/NdROLF.jpg"></image>
+                <view class="weui-article__h3 add_font">2019</view>  
+
+                <view class="honor_img">
+                  <image class="weui-article__img about_imgs" src="https://s1.ax1x.com/2020/06/24/NdIYRA.jpg" mode="aspectFit"/>
+                    <view class="weui-article__h4">软件企业证书</view>               
+                </view>
+              </view>
+            </view>
+
+            <view class="honor_block">
+              <view class="add" hover-class="none" hover-stop-propagation="false">
+                <image class="add_pic" src="https://s1.ax1x.com/2020/06/24/NdROLF.jpg"></image>
+                <view class="weui-article__h3 add_font">2018</view>  
+
+                <view class="honor_img">
+                  <image class="weui-article__img about_imgs" src="https://s1.ax1x.com/2020/06/24/NdoFyt.png" mode="aspectFit"/>
+                  <view class="weui-article__h4">挂牌企业证书</view>               
+                </view>
+                <view class="honor_img">
+                  <image class="weui-article__img about_imgs" src="https://s1.ax1x.com/2020/06/24/NdoEef.jpg" mode="aspectFit"/>
+                  <view class="weui-article__h4">天津市科技型企业认定证书</view>               
+                </view>
+                <view class="honor_img">
+                  <image class="weui-article__img about_imgs" src="../image/huiyuan.jpg" mode="aspectFit"/>
+                  <view class="weui-article__h4">天津市软件协会会员单位</view>               
+                </view>
+              </view>
+            </view>
+
+            <view class="honor_block">
+              <view class="add" hover-class="none" hover-stop-propagation="false">
+                <image class="add_pic" src="https://s1.ax1x.com/2020/06/24/NdROLF.jpg"></image>
+                <view class="weui-article__h3 add_font">2017</view>  
+
+                <view class="honor_img">
+                  <image class="weui-article__img about_imgs" src="https://s1.ax1x.com/2020/06/24/NdouWj.png" mode="aspectFit"/>
+                  <view class="weui-article__h4">高新技术企业证书</view>               
+                </view>
+                <view class="honor_img">
+                  <image class="weui-article__img about_imgs" src="../image/zhishichanquan.jpg" mode="aspectFit"/>
+                  <view class="weui-article__h4">知识产权管理体系认证证书</view>               
+                </view>
+              </view>
+            </view>
+
+          </view>
+        </view> -->
+
+      </view>
+    </view>
+    </view>
+  </view>
+
+
+  <!-- 底部 -->
+  <view class="weui-footer">
+    <view class="weui-footer__links">
+      <a class="weui-footer__link">浪淘科技</a>
+    </view>
+    <view class="weui-footer__text">Copyright &copy; 2008-2016 weui.io</view>
+  </view>
+</view>
